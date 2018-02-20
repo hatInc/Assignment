@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MainMenu</string>
+    <string name="username">UserName</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="new_user">New User?</string>
+    <string name="confirm_Pass">Confirm Password</string>
+    <string name="confirm_email">Confirm Email</string>
+</resources>
