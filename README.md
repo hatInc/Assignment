@@ -1,2 +1,0 @@
-# Assignment
-Main Menu Application
