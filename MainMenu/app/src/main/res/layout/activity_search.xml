@@ -100,13 +100,43 @@
             android:inputType="textPassword" />
 
         <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/dropDown"
-            android:spinnerMode="dialog"
-            android:prompt="@string/food_type"
-            style="@android:style/Widget.Holo.Light.Spinner"
-            android:entries="@array"></Spinner>
+            android:id="@+id/dropdownlist"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"/>
+
+        <ImageView
+            android:id="@+id/make"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="330dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/searchbutton" />
+
+        <TextView
+            android:id="@+id/searchresult"
+            android:layout_width="375dp"
+            android:layout_height="410dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/edit_text_background"
+            app:srcCompat="@drawable/searchbutton" />
 
     </RelativeLayout>
 
