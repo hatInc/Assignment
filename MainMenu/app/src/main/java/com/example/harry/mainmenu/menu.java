@@ -17,8 +17,15 @@ public class menu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
     }
 
-    public void addRecipe(View view){
-        Intent intent = new Intent(this, maker.class);
+    public void goToSettings(View view){
+        Intent intent = new Intent(this, mainSettings.class);
         startActivity(intent);
+    }
+
+
+    public void goToRecipe(View view){
+        Intent intent = new Intent(this, recipe.class);
+        startActivity(intent);
+        finish();
     }
 }

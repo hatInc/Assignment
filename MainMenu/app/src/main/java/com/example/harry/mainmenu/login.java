@@ -29,6 +29,7 @@ public class login extends AppCompatActivity {
     public void newUser(View view){
         Intent intent = new Intent(this, register.class);
         startActivity(intent);
+        finish();
     }
 
     private Button.OnClickListener okOnClickListener = new Button.OnClickListener(){

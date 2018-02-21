@@ -16,10 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".register"></activity>
-        <activity android:name=".menu"></activity>
-        <activity android:name=".maker"></activity>
-        <activity android:name=".timer"></activity>
+        <activity android:name=".register" />
+        <activity android:name=".menu" />
+        <activity android:name=".mainSettings" />
+        <activity android:name=".recipe"></activity>
     </application>
 
 </manifest>

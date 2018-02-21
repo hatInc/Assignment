@@ -60,20 +60,21 @@
             android:inputType="textPassword" />
 
         <TextView
-            android:id="@+id/forgotPassword"
+            android:id="@+id/newUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:clickable="true"
             android:onClick="newUser"
-            android:text="@string/new_user"/>
+            android:text="@string/new_user"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
 
         <Button
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/forgotPassword"
+            android:layout_below="@+id/newUser"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="26dp"
             android:background="@drawable/edit_text_background"

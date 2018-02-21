@@ -6,6 +6,4 @@
     <string name="new_user">New User?</string>
     <string name="confirm_Pass">Confirm Password</string>
     <string name="confirm_email">Confirm Email</string>
-    <string name="search">Search Bar</string>
-    <string name="food_type">Food Type</string>
 </resources>

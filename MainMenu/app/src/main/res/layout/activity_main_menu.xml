@@ -18,66 +18,63 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-        android:id="@+id/banner"
-        android:layout_width="356dp"
-        android:layout_height="255dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mainbanner" />
-
-        <ImageView
-            android:id="@+id/settings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:id="@+id/banner"
+            android:layout_width="356dp"
+            android:layout_height="255dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/settingsbutton" />
+            app:srcCompat="@drawable/mainbanner" />
 
         <ImageView
             android:id="@+id/search"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="330dp"
-            android:layout_marginStart="330dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_alignEnd="@+id/banner"
+            android:layout_alignRight="@+id/banner"
+            android:layout_alignTop="@+id/settings"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/searchbutton" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/banner"
+            android:layout_alignStart="@+id/banner"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="goToSettings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/settingsbutton" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="383dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="510dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/basket"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/favourites"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
@@ -88,10 +85,8 @@
             android:id="@+id/favourites"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="165dp"
-            android:layout_marginStart="165dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_alignTop="@+id/timer"
+            android:layout_centerHorizontal="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
@@ -99,19 +94,18 @@
             app:srcCompat="@drawable/starbutton" />
 
         <ImageView
-            android:id="@+id/make"
+            android:id="@+id/timer"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="330dp"
-            android:layout_marginStart="330dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:clickable="true"
-            android:onClick="addRecipe"
             app:srcCompat="@drawable/addbutton" />
 
     </RelativeLayout>
@@ -119,18 +113,19 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="383dp"
         android:layout_height="460dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
         android:layout_marginTop="50dp"
         android:fillViewport="true"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:clickable="true"
+            android:onClick="goToRecipe"
+            app:srcCompat="@android:drawable/alert_light_frame" />
     </android.support.v4.widget.NestedScrollView>
 </android.support.constraint.ConstraintLayout>
