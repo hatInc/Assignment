@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.harry.mainmenu.maker">
+
+    <RelativeLayout
+    android:layout_width="383dp"
+    android:layout_height="55dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@drawable/edit_text_background">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="356dp"
+        android:layout_height="255dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainbanner" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="330dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:onClick="viewSettings"
+        app:srcCompat="@drawable/settingsbutton" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:onClick="backMain"
+        app:srcCompat="@drawable/backbutton" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="383dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="510dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/edit_text_background">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="383dp"
+        android:layout_height="460dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/edit_text_background">
+
+        <Button
+            android:id="@+id/addImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="23"
+            android:height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/edit_text_background"
+            android:text="Add an image" />
+
+        <EditText
+            android:id="@+id/recipeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/edit_text_background"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center_horizontal"
+            android:hint="Enter a name for the recipe"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/recipeIngredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:background="@drawable/edit_text_background"
+            android:ellipsize="start"
+            android:ems="14"
+            android:gravity="center_horizontal"
+            android:hint="Enter an ingredient"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/instructionDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/edit_text_background"
+            android:ellipsize="start"
+            android:ems="14"
+            android:gravity="center_horizontal"
+            android:hint="Enter the instructions"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:id="@+id/addIngredient"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="330dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/addbutton" />
+
+        <ImageView
+            android:id="@+id/addInstruction"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="330dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/addbutton" />
+
+        <Button
+            android:id="@+id/addRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/edit_text_background"
+            android:clickable="true"
+            android:onClick="backMain"
+            android:text="Add Recipe" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
