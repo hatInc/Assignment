@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".register"></activity>
         <activity android:name=".menu"></activity>
+        <activity android:name=".maker"></activity>
+        <activity android:name=".timer"></activity>
     </application>
 
 </manifest>

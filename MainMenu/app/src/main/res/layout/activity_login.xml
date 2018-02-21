@@ -67,8 +67,7 @@
             android:layout_centerVertical="true"
             android:clickable="true"
             android:onClick="newUser"
-            android:text="@string/new_user"
-            android:textAppearance="@style/TextAppearance.AppCompat" />
+            android:text="@string/new_user"/>
 
         <Button
             android:id="@+id/login"
