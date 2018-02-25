@@ -8,24 +8,24 @@
     tools:context="com.example.harry.mainmenu.favourites">
 
     <RelativeLayout
-        android:layout_width="383dp"
+        android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_text_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/edit_text_background">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/banner"
             android:layout_width="356dp"
             android:layout_height="255dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,70 +36,71 @@
             android:id="@+id/back"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="backMain"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:clickable="true"
-            android:onClick="backMain"
             app:srcCompat="@drawable/backbutton" />
 
         <ImageView
-            android:id="@+id/settings"
+            android:id="@+id/back"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="330dp"
-            android:layout_marginStart="330dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_alignEnd="@+id/banner"
+            android:layout_alignRight="@+id/banner"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="viewSettings"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:clickable="true"
-            android:onClick="viewSettings"
             app:srcCompat="@drawable/settingsbutton" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="383dp"
+        android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="510dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/edit_text_background">
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp">
 
         <ImageView
             android:id="@+id/basket"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="7dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/removeFav"
+            android:layout_marginLeft="7dp"
             android:layout_marginStart="7dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="viewBasket"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:clickable="true"
-            android:onClick="viewBasket"
             app:srcCompat="@drawable/basketbutton" />
 
         <ImageView
             android:id="@+id/removeFav"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="165dp"
-            android:layout_marginStart="165dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_alignTop="@+id/make"
+            android:layout_centerHorizontal="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
@@ -110,50 +111,31 @@
             android:id="@+id/make"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="330dp"
-            android:layout_marginStart="330dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:clickable="true"
+            android:onClick="addRecipe"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:clickable="true"
-            android:onClick="addRecipe"
             app:srcCompat="@drawable/addbutton" />
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="383dp"
-        android:layout_height="460dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/edit_text_background">
-
-        <android.support.v4.widget.NestedScrollView
-            android:layout_width="383dp"
-            android:layout_height="460dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
-            android:fillViewport="true"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-        </android.support.v4.widget.NestedScrollView>
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="383dp"
             android:layout_height="60dp"
             android:layout_marginEnd="20dp"
@@ -161,8 +143,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/edit_text_background"
             android:clickable="true"
-            android:onClick="viewRecipe"
-            android:id="@+id/textView" />
+            android:onClick="viewRecipe" />
 
         <CheckBox
             android:id="@+id/checkBox"
@@ -170,8 +151,9 @@
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/textView"
             android:layout_alignRight="@+id/textView"
-            android:layout_alignTop="@+id/textView"
-            android:layout_marginTop="12dp" />
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp" />
 
     </RelativeLayout>
 

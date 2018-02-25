@@ -8,24 +8,25 @@
     tools:context="com.example.harry.mainmenu.timer">
 
     <RelativeLayout
-        android:layout_width="383dp"
+        android:id="@+id/relativeLayout8"
+        android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edit_text_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/edit_text_background">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/banner"
             android:layout_width="356dp"
             android:layout_height="255dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,59 +37,155 @@
             android:id="@+id/settings"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="330dp"
-            android:layout_marginStart="330dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:layout_alignEnd="@+id/banner"
+            android:layout_alignRight="@+id/banner"
+            android:layout_alignTop="@+id/banner"
+            android:clickable="true"
+            android:onClick="viewSettings"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:clickable="true"
-            android:onClick="viewSettings"
             app:srcCompat="@drawable/settingsbutton" />
 
         <ImageView
             android:id="@+id/back"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:onClick="backMain"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:clickable="true"
-            android:onClick="backMain"
             app:srcCompat="@drawable/backbutton" />
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="383dp"
+        android:id="@+id/relativeLayout11"
+        android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="510dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/edit_text_background">
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp">
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="383dp"
-        android:layout_height="230dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout11"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/edit_text_background">
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout10">
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Current Task"
+            android:textSize="35dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pause"
+                android:layout_alignBottom="@+id/pause"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:text="Prev"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/pause"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:text="Pause"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pause"
+                android:layout_alignBottom="@+id/pause"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:text="Next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pause"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/edit_text_background"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout8">
 
         <TextView
             android:id="@+id/digitalclock"
@@ -96,61 +193,8 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:textSize="50dp"
-            android:text="00:00"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="383dp"
-        android:layout_height="230dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="280dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/edit_text_background">
-
-        <TextView
-            android:id="@+id/forgotPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:textSize="35dp"
-            android:text="Current Task"/>
-
-        <Button
-            android:id="@+id/pause"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/forgotPassword"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="110dp"
-            android:background="@drawable/edit_text_background"
-            android:text="Pause"/>
-
-        <Button
-            android:id="@+id/next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/forgotPassword"
-            android:layout_marginTop="110dp"
-            android:layout_marginRight="250dp"
-            android:layout_marginLeft="250dp"
-            android:background="@drawable/edit_text_background"
-            android:text="Next"/>
-
-        <Button
-            android:id="@+id/previous"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/forgotPassword"
-            android:layout_marginTop="110dp"
-            android:layout_marginRight="45dp"
-            android:layout_marginLeft="45dp"
-            android:background="@drawable/edit_text_background"
-            android:text="Prev"/>
+            android:text="00:00"
+            android:textSize="50dp" />
 
     </RelativeLayout>
 
