@@ -25,6 +25,10 @@
         <activity android:name=".favourites"></activity>
         <activity android:name=".basket"></activity>
         <activity android:name=".recipe"></activity>
+
     </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
 
 </manifest>
