@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.harry.mainmenu">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -16,19 +18,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".register"></activity>
-        <activity android:name=".menu"></activity>
-        <activity android:name=".maker"></activity>
-        <activity android:name=".timer"></activity>
-        <activity android:name=".search"></activity>
-        <activity android:name=".mainSettings"></activity>
-        <activity android:name=".favourites"></activity>
-        <activity android:name=".basket"></activity>
-        <activity android:name=".recipe"></activity>
-
+        <activity android:name=".register" />
+        <activity android:name=".menu" />
+        <activity android:name=".maker" />
+        <activity android:name=".timer" />
+        <activity android:name=".search" />
+        <activity android:name=".mainSettings" />
+        <activity android:name=".favourites" />
+        <activity android:name=".basket" />
+        <activity android:name=".recipe" />
+        <activity
+            android:name=".createStep"
+            android:theme="@style/AppTheme.Custom" />
+        <activity
+            android:name=".ingredientWindow"
+            android:theme="@style/AppTheme.Custom"/>
     </application>
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
 
 </manifest>
