@@ -7,6 +7,65 @@
     tools:context="com.example.harry.mainmenu.recipe"
     android:background="@color/white">
 
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/recipebanner" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/banner"
+            android:layout_alignStart="@+id/banner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="goToMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/backbutton" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/banner"
+            android:layout_alignRight="@+id/banner"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="goToSettings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/settingsbutton" />
+    </RelativeLayout>
+
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="0dp"
@@ -92,84 +151,24 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/edit_text_background"
+        android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="4dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/timer"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:clickable="true"
             android:onClick="viewTimer"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/timer" />
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/edit_text_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/banner"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/mainbanner" />
-
-        <ImageView
-            android:id="@+id/back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignLeft="@+id/banner"
-            android:layout_alignStart="@+id/banner"
-            android:layout_centerVertical="true"
-            android:clickable="true"
-            android:onClick="goToMain"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/backbutton" />
-
-        <ImageView
-            android:id="@+id/settings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignEnd="@+id/banner"
-            android:layout_alignRight="@+id/banner"
-            android:layout_centerVertical="true"
-            android:clickable="true"
-            android:onClick="goToSettings"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/settingsbutton" />
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

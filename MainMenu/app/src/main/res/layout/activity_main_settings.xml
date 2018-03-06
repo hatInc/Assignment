@@ -8,12 +8,13 @@
     tools:context="com.example.harry.mainmenu.mainSettings">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout5"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/edit_text_background"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,28 +23,28 @@
             android:id="@+id/banner"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/mainbanner" />
+            app:srcCompat="@drawable/settingbanner" />
 
         <ImageView
             android:id="@+id/back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/banner"
+            android:layout_alignStart="@+id/banner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
             android:clickable="true"
             android:onClick="backMain"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/backbutton" />
@@ -51,32 +52,30 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout6"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="0dp"
+        android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="4dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/make"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="12dp"
-            android:layout_marginRight="12dp"
+            android:layout_alignTop="@+id/favourites"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:clickable="true"
             android:onClick="backMain"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/apply" />
@@ -86,7 +85,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -97,7 +96,7 @@
             android:layout_height="60dp"
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="2dp"
             android:background="@drawable/edit_text_background" />
 
     </RelativeLayout>

@@ -6,4 +6,6 @@
     <color name="shape_border_active">#CBC5C3</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="green">#57BB5A</color>
+    <color name="grey">#C8C8C8</color>
 </resources>

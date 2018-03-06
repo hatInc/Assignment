@@ -11,10 +11,10 @@
         android:id="@+id/relativeLayout2"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/edit_text_background"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -31,35 +31,36 @@
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/mainbanner" />
+            app:srcCompat="@drawable/makerbanner" />
 
         <ImageView
             android:id="@+id/settings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignEnd="@+id/banner"
             android:layout_alignRight="@+id/banner"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_centerVertical="true"
             android:clickable="true"
             android:onClick="viewSettings"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/settingsbutton" />
 
         <ImageView
             android:id="@+id/back"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/banner"
+            android:layout_alignStart="@+id/banner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
             android:clickable="true"
             android:onClick="backMain"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/backbutton" />
@@ -192,16 +193,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="0dp"
+        android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="4dp">
+        app:layout_constraintStart_toStartOf="parent">
 
     </RelativeLayout>
 
